@@ -1,0 +1,116 @@
+body {
+    background-color: var(--azul);
+    font-family: var(--fonte-textos);
+    height: 100vh;
+    width: 100%;
+ }
+
+.container{ 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 280px;
+  min-height: 340px;
+  padding: 12px;
+  background-color: var(--branco);
+  border-left: 6px solid var(--verde);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  font-family: var(--fonte-principal);
+  text-align: center;
+  overflow: hidden;
+}
+
+
+
+.card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Imagem do produto */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.08);
+}
+
+/* Título */
+.titulo-produto {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--rosa);
+}
+
+/* Valor */
+.valor-produto {
+  font-size: 1rem;
+  color: var(--azul);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* Botão */
+.btn.matrix {
+  position: relative;
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid var(--verde);
+  border-radius: 6px;
+  color: var(--verde);
+  background: transparent;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.btn.matrix:hover {
+  background: var(--verde);
+  color: #fff;
+  box-shadow: 0 0 10px var(--verde);
+}
+
+/* Efeito “code rain” opcional */
+.btn.matrix .code-rain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, rgba(0, 255, 0, 0.3));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.btn.matrix:hover .code-rain {
+  opacity: 1;
+  animation: rain 1.2s linear infinite;
+}
+
+@keyframes rain {
+  0% { background-position: 0 -100%; }
+  100% { background-position: 0 100%; }
+}

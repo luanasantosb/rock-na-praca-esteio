@@ -1,0 +1,167 @@
+body{
+    background-color: var(--preto);
+}
+.container{
+  background-color: var(--rosa);
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color:var(--branco);
+ }
+ .container2{
+  background-color: var(--azul);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  color:var(--branco);
+ }
+
+ .container-imagem{
+  width: 50%;
+  align-items: center;
+  margin:auto;
+  margin-left: 90px;
+ }
+
+ .container-conteudo{
+  width: 50%;
+  font-family: var(--fonte-textos);
+  }
+ 
+  h2{
+  margin-bottom: 1rem;
+  color:var(--preto);
+  font-family: var(--fonte-principal);
+  font-size: 3rem;
+  }
+
+  p{
+  font-family: var(--fonte-textos);
+  font-size: 1.5em;
+  color:var(--preto);
+}
+   .container-mapa{
+    margin-top:50px;
+  }
+
+  .btn.matrix {
+    margin-top: 1rem;
+  position: relative;
+  display: inline-block;
+  padding: 8px 16px;
+  border: 2px solid var(--verde);
+  border-radius: 6px;
+  color: var(--verde);
+  background: transparent;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.btn.matrix:hover {
+  background: var(--verde);
+  color: #fff;
+  box-shadow: 0 0 10px var(--verde);
+}
+
+.btn.matrix .code-rain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, var(--verde));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.btn.matrix:hover .code-rain {
+  opacity: 1;
+  animation: rain 1.2s linear infinite;
+}
+
+/* 🔹 Carrossel pequeno */
+.carrossel {
+  width: 600px;   /* menor largura */
+  height: 400px;  /* menor altura */
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* 🔹 Container dos slides */
+.slides {
+  display: flex;
+  width: 100%;
+  animation: slide 16s infinite;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* corta sem distorcer */
+  border-radius: 10px;
+}
+
+/* 🔹 Animação automática */
+@keyframes slide {
+  0%, 20%   { transform: translateX(0); }
+  25%, 45%  { transform: translateX(-100%); }
+  50%, 70%  { transform: translateX(-200%); }
+  75%, 95%  { transform: translateX(-300%); }
+  100%      { transform: translateX(0); }
+}
+
+/* 🔹 Pontinhos */
+.nav-dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.nav-dots span {
+  width: 8px;
+  height: 8px;
+  background: #ffffff55;
+  border-radius: 50%;
+}
+
+@keyframes dots {
+  0%, 20% { background: #fff; }
+  25%, 100% { background: #ffffff55; }
+}
+
+.nav-dots span:nth-child(1) { animation: dots 16s infinite; }
+.nav-dots span:nth-child(2) { animation: dots 16s infinite 4s; }
+.nav-dots span:nth-child(3) { animation: dots 16s infinite 8s; }
+.nav-dots span:nth-child(4) { animation: dots 16s infinite 12s; }
+
+/* 🔹 Responsivo */
+@media (max-width: 500px) {
+  .carrossel {
+    width: 90%;
+    height: 150px; /* ainda menor em celulares */
+  }
+}
+
+
+
+
+
+
+
