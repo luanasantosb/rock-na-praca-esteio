@@ -18,10 +18,21 @@
     --fonte-principal: 'bebas Neue';
     --fonte-textos: 'Open sans';
 }
+html, body {
+  height: 100%;
+  margin: 0;
+}
 
-body{
-  background-color: var(--preto);
+body {
   color:var(--branco);
+  background-color: var(--preto);
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 
 h2{
@@ -74,15 +85,13 @@ header {
 footer {
   background-color: var(--verde);
   color: var(--preto);
-  padding: 5px 20px;
   text-align: center;
   font-family: var(--fonte-textos);
-  font-size: 1rem;
-  height: 50px;
+  font-size: 1.5rem;
+  padding: 30px 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: nowrap;
   gap: 10px;
 }
 
@@ -101,13 +110,13 @@ footer {
 }
 
 .social-links a img {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   transition: transform 0.3s ease;
 }
 
 .social-links a:hover img {
-  transform: scale(1.1); 
+  transform: scale(1.5); 
 }
 
 .copyright, .desenvolvedor-credito {
@@ -122,10 +131,11 @@ footer {
  }
   
   .copyright, .desenvolvedor-credito {
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   }
   
 .desenvolvedor-credito a{
   text-decoration: none;
   color: var(--preto);
+  font-size: 1.5rem;
   }

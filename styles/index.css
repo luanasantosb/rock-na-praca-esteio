@@ -190,14 +190,24 @@ font-family: var(--fonte-principal);
 }
 
 /*REALIZAÇÃO E APOIO*/
+h2{
+  margin: 20px;
+}
 .realizacao img{
+  margin:25px;
   height: 100px;
   width: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+.realizacao img:hover{
+  transform: scale(1.20); 
 }
 .apoio{
   display:flex;
   justify-content: space-evenly;
+}
+.apoio img:hover{
+  transform: scale(1.20); 
 }
 .apoio img{
   height: 100px;
