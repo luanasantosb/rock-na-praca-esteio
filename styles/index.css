@@ -131,7 +131,7 @@ font-family: var(--fonte-principal);
 }
 
 .proxima-edicao .imagem img:hover {
-  transform: scale(2.00); 
+  transform: scale(1.20); 
 }
 
 .proxima-edicao .conteudo {
@@ -187,4 +187,20 @@ font-family: var(--fonte-principal);
   .proxima-edicao .imagem img {
     width: 90%;
   }
+}
+
+/*REALIZAÇÃO E APOIO*/
+.realizacao img{
+  height: 100px;
+  width: 100px;
+  margin-bottom: 20px;
+}
+.apoio{
+  display:flex;
+  justify-content: space-evenly;
+}
+.apoio img{
+  height: 100px;
+  width: 100px;
+  margin-bottom: 20px;
 }

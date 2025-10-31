@@ -19,6 +19,24 @@
     --fonte-textos: 'Open sans';
 }
 
+body{
+  background-color: var(--preto);
+  color:var(--branco);
+}
+
+h2{
+  margin-top: 20px;
+  font-family: var(--fonte-principal);
+  color:var(--amarelo);
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+p{
+  font-size: 2rem;
+  font-family: var(--fonte-textos);
+  margin-bottom: 20px;
+}
+
 /*CABEÇALHO*/
 header {
    height: 50px;
@@ -49,8 +67,7 @@ header {
   }
 
   nav a.active, nav a:hover {
-    background-color: var(--branco);
-    color: var(--verde);
+    border-bottom:solid 2px var(--branco);
   }
 
 /*RODAPÉ*/
