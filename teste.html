@@ -1,0 +1,93 @@
+<style>
+
+carrossel {
+  width: 400px;
+  height: 200px; 
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+.slides {
+  display: flex;
+  width: 100%;
+  animation: slide 16s infinite;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* corta sem distorcer */
+  border-radius: 10px;
+}
+
+@keyframes slide {
+  0%, 20%   { transform: translateX(0); }
+  25%, 45%  { transform: translateX(-100%); }
+  50%, 70%  { transform: translateX(-200%); }
+  75%, 95%  { transform: translateX(-300%); }
+  100%      { transform: translateX(0); }
+}
+
+.nav-dots {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.nav-dots span {
+  width: 8px;
+  height: 8px;
+  background: #ffffff55;
+  border-radius: 50%;
+}
+
+@keyframes dots {
+  0%, 20% { background: #fff; }
+  25%, 100% { background: #ffffff55; }
+}
+
+.nav-dots span:nth-child(1) { animation: dots 16s infinite; }
+.nav-dots span:nth-child(2) { animation: dots 16s infinite 4s; }
+.nav-dots span:nth-child(3) { animation: dots 16s infinite 8s; }
+.nav-dots span:nth-child(4) { animation: dots 16s infinite 12s; }
+
+ 
+</style>
+
+</body>
+<div class="principal">
+  <div class="carrosel">
+    <div class="slides">
+       <!-- As imagens -->
+      <div class="slide">
+        <img src="/assets/slid.jpg" alt="Imagem 1">
+      </div>
+      <div class="slide">
+        <img src="assets/slid2.jpg" alt="Imagem 2">
+      </div>
+      <div class="slide">
+        <img src="assets/slid3.jpg" alt="Imagem 3">
+      </div>
+      <div class="slide">
+        <img src="assets/slid4.jpg" alt="Imagem 4">
+      </div>
+      </div>
+      <div class="nav-dots">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+  </div>
+</div>
+<div>

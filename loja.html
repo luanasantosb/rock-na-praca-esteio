@@ -1,150 +1,32 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
-  <link rel="stylesheet" href="/styles/loja.css">
-    <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/reset.css">
+  <link rel="stylesheet" href="/styles/style.css">
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Loja - Rock na praça </title>
-<style>
-.container{
-  background-color: transparent;
-  border:5px solid transparent;
-  border-radius: 20px;
-  width: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  color:var(--branco);
- }
-  header {
-    background: var(--verde);
-    padding: 10px 40px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-.logoeicone{
-  display:flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 50%;
-  height: auto;
-  gap: 10px;
-}
-  .logotipo,.icone {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: left;
-  }
 
-  nav {
-    display: flex;
-    gap: 25px;
-    font-family: var(--fonte-principal);
-    font-weight: 700;
-    font-size: 2rem;
-  }
-
-  nav a {
-    text-decoration: none;
-    color: var(--rosa);
-    font-weight: 700;
-  }
-
-  nav a:hover{
-    background-color: var(--branco);
-    color:var(--preto);
-  }
-
-  nav a.active {
-    color: var(--azul);
-  }
-
-footer {
-  background-color: var(--verde);
-  color: var(--preto);
-  padding: 5px 20px;
-  text-align: center;
-  font-family: var(--fonte-textos);
-  font-size: 1rem;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  gap: 10px;
-}
-
-.rodape-conteudo {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.social-links {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.social-links a img {
-  width: 24px;
-  height: 24px;
-  transition: transform 0.3s ease;
-}
-
-.social-links a:hover img {
-  transform: scale(1.1); 
-}
-
-.copyright, .desenvolvedor-credito {
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-  
-  .rodape-conteudo {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .copyright, .desenvolvedor-credito {
-    font-size: 0.9rem;
-  }
-.desenvolvedor-credito a{
-   text-decoration: none;
-    color:black;
-}
-
-</style>
 </head>
 <body>
 
 <header>
   <div class="logoeicone">
-        <div class="icone">
-            <img src="/assets/icone.png" alt="Ícone rock na praça" />
-        </div>
-        <div class="logotipo">
-            <img src="/assets/logo.png" alt="logo do rock na praça"/>
+            <img src="/assets/logoeicone.png" alt="Ícone rock na praça" height="70px;"/>
         </div>
   </div>
 
     </div>
   </div>
   <nav>
-    <a href="index.html">Página Inicial</a>
+    <a href="index.html" class="active">Página Inicial</a>
     <a href="sobre.html">sobre</a>
     <a href="participe.html">Participe</a>
-    <a href="loja.html" class="active">Loja</a>
+    <a href="loja.html">Loja</a>
     <a href="#">Contato</a>
   </nav>
 </header>
+
 </body>
 <main>
     <h2>Loja</h2>
