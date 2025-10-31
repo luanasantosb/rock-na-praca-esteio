@@ -1,254 +1,117 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="PT-BR">
 <head>
   <link rel="stylesheet" href="/styles/reset.css">
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/index.css">
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Rock na praça Esteio</title>
-<style>
-
-  header {
-    background: var(--verde);
-    padding: 10px 40px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-.logoeicone{
-  display:flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 50%;
-  height: auto;
-  gap: 10px;
-}
-  .logotipo,.icone {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: left;
-  }
-
-  nav {
-    display: flex;
-    gap: 25px;
-    font-family: var(--fonte-principal);
-    font-weight: 700;
-    font-size: 2rem;
-  }
-
-  nav a {
-    text-decoration: none;
-    color: var(--rosa);
-    font-weight: 700;
-  }
-
-  nav a:hover{
-    background-color: var(--branco);
-    color:var(--preto);
-  }
-
-  nav a.active {
-    color: var(--azul);
-  }
-
-footer {
-  background-color: var(--verde);
-  color: var(--preto);
-  padding: 5px 20px;
-  text-align: center;
-  font-family: var(--fonte-textos);
-  font-size: 1rem;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-  gap: 10px;
-}
-
-.rodape-conteudo {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.social-links {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.social-links a img {
-  width: 24px;
-  height: 24px;
-  transition: transform 0.3s ease;
-}
-
-.social-links a:hover img {
-  transform: scale(1.1); 
-}
-
-.copyright, .desenvolvedor-credito {
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-  
-  .rodape-conteudo {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-  
-  .copyright, .desenvolvedor-credito {
-    font-size: 0.9rem;
-  }
-.desenvolvedor-credito a{
-   text-decoration: none;
-    color:black;
-}
-
-carrossel {
-  width: 400px;
-  height: 200px; 
-  overflow: hidden;
-  border-radius: 10px;
-  position: relative;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-}
-.slides {
-  display: flex;
-  width: 100%;
-  animation: slide 16s infinite;
-}
-
-.slide {
-  width: 100%;
-  flex-shrink: 0;
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* corta sem distorcer */
-  border-radius: 10px;
-}
-
-@keyframes slide {
-  0%, 20%   { transform: translateX(0); }
-  25%, 45%  { transform: translateX(-100%); }
-  50%, 70%  { transform: translateX(-200%); }
-  75%, 95%  { transform: translateX(-300%); }
-  100%      { transform: translateX(0); }
-}
-
-.nav-dots {
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-}
-
-.nav-dots span {
-  width: 8px;
-  height: 8px;
-  background: #ffffff55;
-  border-radius: 50%;
-}
-
-@keyframes dots {
-  0%, 20% { background: #fff; }
-  25%, 100% { background: #ffffff55; }
-}
-
-.nav-dots span:nth-child(1) { animation: dots 16s infinite; }
-.nav-dots span:nth-child(2) { animation: dots 16s infinite 4s; }
-.nav-dots span:nth-child(3) { animation: dots 16s infinite 8s; }
-.nav-dots span:nth-child(4) { animation: dots 16s infinite 12s; }
-
- 
-</style>
 </head>
 <body>
-
-<header>
-  <div class="logoeicone">
-        <div class="icone">
-            <img src="/assets/icone.png" alt="Ícone rock na praça" />
-        </div>
-        <div class="logotipo">
-            <img src="assets/logo.png"logo do rock na praça"/>
-        </div>
-  </div>
-
+  <!--CABEÇALHO-->
+  <header>
+    <div class="logo-icone">
+      <img src="/assets/logoeicone.png" alt="Ícone rock na praça" height="70px">
     </div>
-  </div>
-  <nav>
-    <a href="index.html" class="active">Página Inicial</a>
-    <a href="sobre.html">sobre</a>
-    <a href="participe.html">Participe</a>
-    <a href="loja.html">Loja</a>
-    <a href="#">Contato</a>
-  </nav>
-</header>
-</body>
-<div class="principal">
-  <div class="carrosel">
+
+    <nav class="menu">
+      <a href="index.html" class="active">Página Inicial</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="participe.html">Participe</a>
+      <a href="loja.html">Loja</a>
+      <a href="#">Contato</a>
+    </nav>
+  </header>
+
+
+  <!--CARROSSEL-->
+<section class="carrossel" id="carrossel">
+  <div class="carrossel-conteudo">
+
+  
+    <input type="radio" name="btn-radio" id="radio1" checked>
+    <input type="radio" name="btn-radio" id="radio2">
+    <input type="radio" name="btn-radio" id="radio3">
+    <input type="radio" name="btn-radio" id="radio4">
+
     <div class="slides">
-       <!-- As imagens -->
-      <div class="slide">
-        <img src="/assets/slid.jpg" alt="Imagem 1">
+      <div class="slide-container">
+        <img src="/assets/slid.jpg" alt="foto1">
       </div>
-      <div class="slide">
-        <img src="assets/slid2.jpg" alt="Imagem 2">
+      <div class="slide-container">
+        <img src="/assets/slid2.jpg" alt="foto2">
       </div>
-      <div class="slide">
-        <img src="assets/slid3.jpg" alt="Imagem 3">
+      <div class="slide-container">
+        <img src="/assets/slid3.jpg" alt="foto3">
       </div>
-      <div class="slide">
-        <img src="assets/slid4.jpg" alt="Imagem 4">
+      <div class="slide-container">
+        <img src="/assets/slid4.jpg" alt="foto4">
       </div>
+    </div>
+
+    <div class="nav-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+    </div>
+
+  </div>
+</section>
+
+<!--DADOS-->
+  <section class="dados" id="dados">
+      <div class="item">
+        <h2 class="contador" data-numero="23">0</h2>
+        <p>anos de existência</p>
       </div>
-      <div class="nav-dots">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+      <div class="item">
+        <h2><span class="simbolo">+</span> <span class="texto-de">de</span> <span class="contador" data-numero="700">0</span></h2>
+        <p>bandas</p>
+      </div>
+      <div class="item">
+        <h2><span class="simbolo">+</span> <span class="texto-de">de</span> <span class="contador" data-numero="150">0</span></h2>
+        <p>edições</p>
+      </div>
+  </section>
+
+<!--PROX.EDIÇÃO-->
+  <section class="proxima-edicao">
+  <div class="container">
+    <div class="imagem">
+      <img src="/assets/rock_setembor.jpeg" alt="Cartaz do Rock na Praça">
+    </div>
+
+    <div class="conteudo">
+      <h2>Próximo Rock na Praça:</h2>
+      <ul>
+        <li>
+          <img src="./assets/icons8-calendário-96.png" alt="calendário">
+          <span>14/09/2025</span>
+        </li>
+        <li>
+          <img src="./assets/icons8-relógio-96.png" alt="relógio">
+          <span>15h às 22h</span>
+        </li>
+        <li>
+          <img src="./assets/icons8-etiqueta-de-preço-96.png" alt="preço">
+          <span>Entrada Franca</span>
+        </li>
+        <li>
+          <img src="./assets/icons8-endereço-96.png" alt="endereço">
+          <span>Praça Coração de Maria<br>Rua Padre Felipe - Centro, Esteio, RS</span>
+        </li>
+      </ul>
     </div>
   </div>
-  </div>
-</div>
-<div>
-  <div class="container">
-        <div class="container-imagem">
-          <img src="/assets/rock_setembor.jpeg" alt="Cartaz do rock na praça" width="400px" height="500px">
-          </div>
-    
-              <div class="container-conteudo">
-                <h2>Próximo Rock na Praça:</h2>
+</section>
 
-                <p> <img width="50px" height="50px" src="https://img.icons8.com/?size=100&id=16152&format=png&color=000000" alt="calendário"/> 14/09/2025<br></p>
 
-                 <p><img width="50px" height="50px" src="https://img.icons8.com/?size=100&id=16153&format=png&color=000000" alt="relógio"/> 15h às 22h<br></p>
+  <script src="script.js"></script>
 
-                 <p><img width="50px" height="50px"src="https://img.icons8.com/ios/100/price-tag-usd--v1.png" alt="preço"/> Entrada Franca<br></p>
+</body>
 
-                <p><img width="50px" height="50px" src="https://img.icons8.com/?size=100&id=E32iY1r0TxnO&format=png&color=000000" alt="endereço"/> Praça Coração de Maria<br>
-                Rua Padre Felipe - Centro, Esteio, RS.</p>
-
-                <a href="/sobre.html#comochegar"class="btn matrix">
-                <span>Mais informações + </span>
-              <div class="code-rain"></div></a>
-              </div>
-              </div>
-            </div>
-</div>
 <footer>
     <div class="rodape-conteudo">
         <div class="copyright">© Rock na praça. Todos os Direitos Reservados.</div>
