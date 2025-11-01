@@ -1,109 +1,86 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
+  <!-- 1. Configurações básicas -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- 2. Título da página -->
+  <title id="page-title">Rock na Praça — 23 Anos de Rock em Esteio/RS</title>
+
+  <!-- 3. SEO Meta Tags -->
+  <meta id="meta-description" name="description" content="O Rock na Praça é um evento mensal que há 23 anos movimenta Esteio (RS) com bandas independentes, muito rock, cultura e atitude. Entrada gratuita e energia underground garantida!">
+  <meta name="keywords" content="rock na praça esteio, evento de rock gratuito, festival underground esteio, rock independente RS, bandas autorais, cultura alternativa, música ao vivo esteio, evento cultural gratuito,underground,música autoral,gratuito,rock,metal,praça coração de maria,esteio,economia solidária,inscrições para as bandas">
+  <meta name="author" content="Rock na Praça Esteio">
+
+  <!-- 4. Open Graph (redes sociais) -->
+  <meta id="og-title" property="og:title" content="Rock na Praça — 23 Anos de Rock em Esteio (RS)">
+  <meta id="og-description" property="og:description" content="Evento mensal e gratuito que há 23 anos celebra o rock independente em Esteio. Cultura, atitude e muito som no Rock na Praça!">
+  <meta id="og-image" property="og:image" content="https://www.jornalnopalco.com.br/wp-content/uploads/2017/02/rock-na-pr%C3%A7a.jpg">
+  <meta property="og:type" content="event">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- 5. Favicon -->
   <link rel="icon" href="./assets/logoeicone.png" type="image/x-icon">
-  <link rel="stylesheet" href="/styles/reset.css">
-  <link rel="stylesheet" href="/styles/style.css">
-  <link rel="stylesheet" href="/styles/index.css">
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="Rock na Praça Esteio é um evento gratuito da cena underground que celebra o rock independente com bandas autorais, cultura alternativa e muita atitude!">
-<meta name="description" content="Rock na Praça Esteio é um evento gratuito e underground que celebra o rock independente com bandas autorais, cultura alternativa e muita atitude!">
-<meta name="keywords" content="rock na praça esteio, evento de rock gratuito, festival underground esteio, rock independente RS, bandas autorais, cultura alternativa, música ao vivo esteio, evento cultural gratuito,undergound,música autoral,gratuito,rock,metal,praça coração de maria,esteio">
-<meta name="author" content="Rock na Praça Esteio">
 
-<title>Rock na Praça Esteio </title>
-<script type="application/ld+json">
+  <!-- 6. CSS -->
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/style.css">
 
-{
-
-"@context": "https://schema.org",
-
-"@type": "Event",
-
-"name": "Rock na Praça",
-
-"startDate": "2025-11-23T15:00-03:00"
-
-"endDate": "2025-11-23T22:00-03:00",
-
-"eventStatus": "https://schema.org/EventScheduled",
-
-"location": {
-
-"@type": "Place",
-
-"name": "Praça Coração de Maria",
-
-"address": {
-
-"@type": "PostalAddress",
-
-"streetAddress": "Rua Padre Felipe",
-
-"addressLocality": "Esteio",
-
-"postalCode": "93280-020",
-
-"addressRegion": "RS",
-
-"addressCountry": "BR"
-
-}
-
-},
-
-"image": [
-
-"https://www.jornalnopalco.com.br/wp-content/uploads/2017/02/rock-na-pra%C3%A7a.jpg",
-
-
-],
-
-"description": "Viva a cena underground no Rock na Praça Esteio! Evento gratuito com bandas independentes, muito rock, cultura e atitude em um espaço aberto para todos os públicos.",
-
-"offers": {
-
-"@type": "Offer",
-
-"url": """,
-
-"price": 0,
-
-"priceCurrency": "BRL",
-
-"availability": "",
-
-"validFrom": "2025-11-23T22:00"
-
-},
-
-"performer": {
-
-"@type": "rock undergound",
-"name": "Vários artistas"
-
-},
-
-"organizer": {
-
-"@type": "Organization",
-
-"name": "Balaiada Combo Cultural",
-
-"url": "https://www.instagram.com/balaiada/"
-
-}
-
-}
-
-</script> 
+  <!-- 7. JSON-LD (dados estruturados do evento) -->
+  <script type="application/ld+json" id="json-ld-event">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Rock na Praça",
+    "startDate": "2025-11-23T15:00-03:00",
+    "endDate": "2025-11-23T22:00-03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Praça Coração de Maria",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Padre Felipe",
+        "addressLocality": "Esteio",
+        "postalCode": "93280-020",
+        "addressRegion": "RS",
+        "addressCountry": "BR"
+      }
+    },
+    "image": [
+      "https://www.jornalnopalco.com.br/wp-content/uploads/2017/02/rock-na-pr%C3%A7a.jpg"
+    ],
+    "description": "Viva a cena underground no Rock na Praça Esteio! Evento gratuito com bandas independentes, muito rock, cultura e atitude em um espaço aberto para todos os públicos.",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.instagram.com/rocknapraca_/",
+      "price": 0,
+      "priceCurrency": "BRL",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2025-10-23T00:00-03:00"
+    },
+    "performer": {
+      "@type": "MusicGroup",
+      "name": "Vários artistas"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Balaiada Combo Cultural",
+      "url": "https://www.instagram.com/balaiada/"
+    }
+  }
+  </script>
 </head>
+
+
 <body>
   <!--CABEÇALHO-->
   <header>
     <div class="logo-icone">
-      <img src="/assets/logoeicone.png" alt="Ícone rock na praça" height="70px">
+      <img src="./assets/logoeicone.png" alt="Ícone rock na praça" height="70px">
     </div>
 
     <nav class="menu">
@@ -111,7 +88,6 @@
       <a href="sobre.html">Sobre</a>
       <a href="participe.html">Participe</a>
       <a href="loja.html">Loja</a>
-      <a href="#">Contato</a>
     </nav>
   </header>
   <main>
@@ -119,8 +95,6 @@
   <!--CARROSSEL-->
 <section class="carrossel" id="carrossel">
   <div class="carrossel-conteudo">
-
-  
     <input type="radio" name="btn-radio" id="radio1" checked>
     <input type="radio" name="btn-radio" id="radio2">
     <input type="radio" name="btn-radio" id="radio3">
@@ -128,16 +102,16 @@
 
     <div class="slides">
       <div class="slide-container">
-        <img src="/assets/slid.jpg" alt="foto1">
+        <img src="./assets/slid.jpg" alt="foto1">
       </div>
       <div class="slide-container">
-        <img src="/assets/slid2.jpg" alt="foto2">
+        <img src="./assets/slid2.jpg" alt="foto2">
       </div>
       <div class="slide-container">
-        <img src="/assets/slid3.jpg" alt="foto3">
+        <img src="./assets/slid3.jpg" alt="foto3">
       </div>
       <div class="slide-container">
-        <img src="/assets/slid4.jpg" alt="foto4">
+        <img src="./assets/slid4.jpg"alt="foto4">
       </div>
     </div>
 
@@ -169,9 +143,9 @@
 
 <!--PROX.EDIÇÃO-->
   <section class="proxima-edicao">
-  <div class="container">
+  <div class="container-proxima-edicao">
     <div class="imagem">
-      <img src="/assets/rock_setembor.jpeg" alt="Cartaz do Rock na Praça">
+      <img src="./assets/logo.png" alt="Cartaz do Rock na Praça">
     </div>
 
     <div class="conteudo">
@@ -179,7 +153,7 @@
       <ul>
         <li>
           <img src="./assets/icons8-calendário-96.png" alt="calendário">
-          <span>14/09/2025</span>
+          <span>23/11/2025</span>
         </li>
         <li>
           <img src="./assets/icons8-relógio-96.png" alt="relógio">
@@ -193,8 +167,11 @@
           <img src="./assets/icons8-endereço-96.png" alt="endereço">
           <span>Praça Coração de Maria<br>Rua Padre Felipe - Centro, Esteio, RS</span>
         </li>
+        </a>
       </ul>
+      <div><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4249.023354367058!2d-51.16682492359747!3d-29.84989882228382!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95196f6ddba74b9f%3A0x57654fe357686cfb!2zUHJhw6dhIENvcmHDp8OjbyBkZSBNYXJpYQ!5e1!3m2!1spt-BR!2sbr!4v1761955813258!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
     </div>
+      
   </div>
 </section>
 <!--REALIZAÇÃO E APOIO-->
@@ -215,7 +192,7 @@
     </a>
 
     <a href="https://www.instagram.com/aquatroimpressosedesign/ " target="_blank">
-      <img src="assets/balaiada.jpg" alt="AQuatro - Gráfica e Brindes">
+      <img src="./assets/balaiada.jpg" alt="AQuatro - Gráfica e Brindes">
     </a>
 
     <a href="https://www.lojabackinblack.com.br/" target="_blank">

@@ -1,16 +1,83 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
-  <link rel="stylesheet" href="/styles/reset.css">
-  <link rel="stylesheet" href="/styles/style.css">
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Loja - Rock na praça </title>
+  <!-- 1. Configurações básicas -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- 2. Título da página -->
+  <title id="page-title">Rock na Praça — 23 Anos de Rock em Esteio/RS</title>
+
+  <!-- 3. SEO Meta Tags -->
+  <meta id="meta-description" name="description" content="O Rock na Praça é um evento mensal que há 23 anos movimenta Esteio (RS) com bandas independentes, muito rock, cultura e atitude. Entrada gratuita e energia underground garantida!">
+  <meta name="keywords" content="rock na praça esteio, evento de rock gratuito, festival underground esteio, rock independente RS, bandas autorais, cultura alternativa, música ao vivo esteio, evento cultural gratuito,underground,música autoral,gratuito,rock,metal,praça coração de maria,esteio,economia solidária,inscrições para as bandas">
+  <meta name="author" content="Rock na Praça Esteio">
+
+  <!-- 4. Open Graph (redes sociais) -->
+  <meta id="og-title" property="og:title" content="Rock na Praça — 23 Anos de Rock em Esteio (RS)">
+  <meta id="og-description" property="og:description" content="Evento mensal e gratuito que há 23 anos celebra o rock independente em Esteio. Cultura, atitude e muito som no Rock na Praça!">
+  <meta id="og-image" property="og:image" content="https://www.jornalnopalco.com.br/wp-content/uploads/2017/02/rock-na-pr%C3%A7a.jpg">
+  <meta property="og:type" content="event">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- 5. Favicon -->
+  <link rel="icon" href="./assets/logoeicone.png" type="image/x-icon">
+
+  <!-- 6. CSS -->
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <!-- 7. JSON-LD (dados estruturados do evento) -->
+  <script type="application/ld+json" id="json-ld-event">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Rock na Praça",
+    "startDate": "2025-11-23T15:00-03:00",
+    "endDate": "2025-11-23T22:00-03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Praça Coração de Maria",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Padre Felipe",
+        "addressLocality": "Esteio",
+        "postalCode": "93280-020",
+        "addressRegion": "RS",
+        "addressCountry": "BR"
+      }
+    },
+    "image": [
+      "https://www.jornalnopalco.com.br/wp-content/uploads/2017/02/rock-na-pr%C3%A7a.jpg"
+    ],
+    "description": "Viva a cena underground no Rock na Praça Esteio! Evento gratuito com bandas independentes, muito rock, cultura e atitude em um espaço aberto para todos os públicos.",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.instagram.com/rocknapraca_/",
+      "price": 0,
+      "priceCurrency": "BRL",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2025-10-23T00:00-03:00"
+    },
+    "performer": {
+      "@type": "MusicGroup",
+      "name": "Vários artistas"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Balaiada Combo Cultural",
+      "url": "https://www.instagram.com/balaiada/"
+    }
+  }
+  </script>
 </head>
-<body>
 
- <header>
+<body>
+  <!--CABEÇALHO-->
+  <header>
     <div class="logo-icone">
       <img src="/assets/logoeicone.png" alt="Ícone rock na praça" height="70px">
     </div>
@@ -20,48 +87,43 @@
       <a href="sobre.html">Sobre</a>
       <a href="participe.html">Participe</a>
       <a href="loja.html" class="active">Loja</a>
-      <a href="contato.html">Contato</a>
     </nav>
   </header>
 
-
-</body>
-<main>
-    <h2>Loja</h2>
-  
-<div class="container">
-
-        <div class="card">
-        <img src="/assets/camiseta-modelo-1.jpg" width="200" height="200"  alt="camiseta1">
-        <span class="titulo-produto"> Camiseta Modelo #1</span>
-        <span class="valor-produto">R$70,00</span>
-
-        <a href="https://api.whatsapp.com/send?phone=5551996506622&text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20o%20produto%20Camiseta%20rock%20na%20praça%20modelo%201" class="btn matrix">
-        <span>Comprar</span>
-        <div class="code-rain"></div>
-        </a>
-      </div>
-  
-      <!--card2-->
-      <div class="card">
-        <img src="assets/camiseta-modelo-2.jpg" width="200" height="200"  alt="camiseta2">
-        <span class="titulo-produto"> Camiseta Modelo #2</span>
-        <span class="valor-produto">R$70,00</span>
-
-        <a href="https://api.whatsapp.com/send?phone=5551996506622&text=Ol%C3%A1%2C%20tenho%20uma%20d%C3%BAvida%20sobre%20o%20produto%20Camiseta%20rock%20na%20praça%20modelo%202" class="btn matrix">
-        <span>Comprar</span>
-        <div class="code-rain"></div>
-        </a>
-        </div>
-        
+<body>
+  <main>
+ 
+    <h2>LOJA</h2>
+    <section>
+    <p class="subtitulo">Quer garantir seu merch exclusivo?<br>
+O evento é GRATUITO, mas cada compra ajuda a fazer o Rock na Praça ficar cada vez maior! </p>
+</section>
+<section class="cards">
+<div class="card">
+  <img src="./assets/camiseta-modelo-1.jpg" alt="camiseta modelo 1">
+  <div class="infos">
+    <h3>Camiseta modelo #1</h3>
+    <p>R$70,00</p>
+    <a>
+      <button class="btn">COMPRAR</button>
+    </a>
+  </div>
 </div>
-    </main>
-
+  <div class="card">
+  <img src="./assets/camiseta-modelo-2.jpg" alt="camiseta modelo 1">
+  <div class="infos">
+    <h3>Camiseta modelo #2</h3>
+    <p>R$70,00</p>
+    <a>
+      <button class="btn">COMPRAR</button>
+    </a>
+  </div>
+</section>
+</main>
 <footer>
     <div class="rodape-conteudo">
         <div class="copyright">© Rock na praça. Todos os Direitos Reservados.</div>
         <div class="social-links">
-            <span>Siga-nos:</span>
             <a href="https://www.instagram.com/rocknapraca_/" target="_blank"><img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="Instagram"></a>
             
             <a href="https://www.facebook.com/rocknapracaesteio" target="_blank"><img src="https://img.icons8.com/?size=100&id=uLWV5A9vXIPu&format=png&color=000000" alt="Facebook"></a>

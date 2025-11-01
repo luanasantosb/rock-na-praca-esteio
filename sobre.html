@@ -1,131 +1,91 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
 <head>
+  <!-- 1. Configurações básicas -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- 2. Título da página -->
+  <title id="page-title">Rock na Praça — 23 Anos de Rock em Esteio/RS</title>
+
+  <!-- 3. SEO Meta Tags -->
+  <meta id="meta-description" name="description" content="O Rock na Praça é um evento mensal que há 23 anos movimenta Esteio (RS) com bandas independentes, muito rock, cultura e atitude. Entrada gratuita e energia underground garantida!">
+  <meta name="keywords" content="rock na praça esteio, evento de rock gratuito, festival underground esteio, rock independente RS, bandas autorais, cultura alternativa, música ao vivo esteio, evento cultural gratuito,underground,música autoral,gratuito,rock,metal,praça coração de maria,esteio,economia solidária,inscrições para as bandas">
+  <meta name="author" content="Rock na Praça Esteio">
+
+  <!-- 4. Open Graph (redes sociais) -->
+  <meta id="og-title" property="og:title" content="Rock na Praça — 23 Anos de Rock em Esteio (RS)">
+  <meta id="og-description" property="og:description" content="Evento mensal e gratuito que há 23 anos celebra o rock independente em Esteio. Cultura, atitude e muito som no Rock na Praça!">
+  <meta id="og-image" property="og:image" content="https://www.jornalnopalco.com.br/wp-content/uploads/2017/02/rock-na-pr%C3%A7a.jpg">
+  <meta property="og:type" content="event">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- 5. Favicon -->
   <link rel="icon" href="./assets/logoeicone.png" type="image/x-icon">
-  <link rel="stylesheet" href="/styles/reset.css">
-  <link rel="stylesheet" href="/styles/style.css">
-  <link rel="stylesheet" href="/styles/index.css">
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="description" content="Rock na Praça Esteio é um evento gratuito da cena underground que celebra o rock independente com bandas autorais, cultura alternativa e muita atitude!">
-<meta name="description" content="Rock na Praça Esteio é um evento gratuito e underground que celebra o rock independente com bandas autorais, cultura alternativa e muita atitude!">
-<meta name="keywords" content="rock na praça esteio, evento de rock gratuito, festival underground esteio, rock independente RS, bandas autorais, cultura alternativa, música ao vivo esteio, evento cultural gratuito,undergound,música autoral,gratuito,rock,metal,praça coração de maria,esteio">
-<meta name="author" content="Rock na Praça Esteio">
 
-<title>Rock na Praça Esteio </title>
-<script type="application/ld+json">
+  <!-- 6. CSS -->
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/style.css">
 
-{
-
-"@context": "https://schema.org",
-
-"@type": "Event",
-
-"name": "Rock na Praça",
-
-"startDate": "2025-11-23T15:00-03:00"
-
-"endDate": "2025-11-23T22:00-03:00",
-
-"eventStatus": "https://schema.org/EventScheduled",
-
-"location": {
-
-"@type": "Place",
-
-"name": "Praça Coração de Maria",
-
-"address": {
-
-"@type": "PostalAddress",
-
-"streetAddress": "Rua Padre Felipe",
-
-"addressLocality": "Esteio",
-
-"postalCode": "93280-020",
-
-"addressRegion": "RS",
-
-"addressCountry": "BR"
-
-}
-
-},
-
-"image": [
-
-"https://www.jornalnopalco.com.br/wp-content/uploads/2017/02/rock-na-pra%C3%A7a.jpg",
-
-
-],
-
-"description": "Viva a cena underground no Rock na Praça Esteio! Evento gratuito com bandas independentes, muito rock, cultura e atitude em um espaço aberto para todos os públicos.",
-
-"offers": {
-
-"@type": "Offer",
-
-"url": """,
-
-"price": 0,
-
-"priceCurrency": "BRL",
-
-"availability": "",
-
-"validFrom": "2025-11-23T22:00"
-
-},
-
-"performer": {
-
-"@type": "rock undergound",
-"name": "Vários artistas"
-
-},
-
-"organizer": {
-
-"@type": "Organization",
-
-"name": "Balaiada Combo Cultural",
-
-"url": "https://www.instagram.com/balaiada/"
-
-}
-
-}
-</script> 
-<style>
-  a, a:visited {
-    text-decoration: none;
-    color:var(--verde);
+  <!-- 7. JSON-LD (dados estruturados do evento) -->
+  <script type="application/ld+json" id="json-ld-event">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Rock na Praça",
+    "startDate": "2025-11-23T15:00-03:00",
+    "endDate": "2025-11-23T22:00-03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Praça Coração de Maria",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Padre Felipe",
+        "addressLocality": "Esteio",
+        "postalCode": "93280-020",
+        "addressRegion": "RS",
+        "addressCountry": "BR"
+      }
+    },
+    "image": [
+      "https://www.jornalnopalco.com.br/wp-content/uploads/2017/02/rock-na-pr%C3%A7a.jpg"
+    ],
+    "description": "Viva a cena underground no Rock na Praça Esteio! Evento gratuito com bandas independentes, muito rock, cultura e atitude em um espaço aberto para todos os públicos.",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.instagram.com/rocknapraca_/",
+      "price": 0,
+      "priceCurrency": "BRL",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2025-10-23T00:00-03:00"
+    },
+    "performer": {
+      "@type": "MusicGroup",
+      "name": "Vários artistas"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Balaiada Combo Cultural",
+      "url": "https://www.instagram.com/balaiada/"
+    }
   }
-h2{
-  margin:2rem 2rem 2rem 2rem;
-  font-size: 3rem;
-}
-p{
-  margin:2rem 2rem 2rem 2rem;
-  font-size: 2rem;
-  font-family: var(--fonte-textos);
-}
-</style>
+  </script>
 </head>
+
 <body>
   <!--CABEÇALHO-->
   <header>
     <div class="logo-icone">
       <img src="/assets/logoeicone.png" alt="Ícone rock na praça" height="70px">
     </div>
-
     <nav class="menu">
       <a href="index.html" >Página Inicial</a>
       <a href="sobre.html" class="active">Sobre</a>
       <a href="participe.html">Participe</a>
       <a href="loja.html">Loja</a>
-      <a href="contato.html">Contato</a>
     </nav>
   </header>
 
@@ -136,7 +96,7 @@ p{
 
 <p>O Rock na Praça é um projeto cultural consolidado, voltado à promoção e valorização do rock independente e da cena alternativa. Criado em 2001, o evento mantém atividades de forma ininterrupta, configurando-se como uma das iniciativas mais tradicionais do gênero no estado.
 <br>
-Em 2022, o Rock na Praça foi oficialmente reconhecido como <a href="https://www.esteio.rs.leg.br/institucional/noticias/rock-na-praca-e-declarado-patrimonio-cultural-de-esteio">Patrimônio Cultural Imaterial da cidade de Esteio/RS</a>, em reconhecimento à sua relevância artística, social e histórica para a comunidade.<br>
+Em 2022, o Rock na Praça foi oficialmente reconhecido como <a href="https://www.esteio.rs.leg.br/institucional/noticias/rock-na-praca-e-declarado-patrimonio-cultural-de-esteio" target="_blank">Patrimônio Cultural Imaterial da cidade de Esteio/RS</a>, em reconhecimento à sua relevância artística, social e histórica para a comunidade.<br>
 Seu propósito é fomentar a produção musical autoral, incentivar a difusão da arte independente e ampliar o acesso gratuito à cultura. Ao longo de sua trajetória, o Rock na Praça tem contribuído significativamente para o fortalecimento da identidade cultural e para o desenvolvimento do cenário musical alternativo regional.</p>
 
      </section>

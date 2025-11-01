@@ -1,16 +1,83 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="PT-BR">
 <head>
-  <link rel="stylesheet" href="/styles/reset.css">
-  <link rel="stylesheet" href="/styles/style.css">
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Participe - Rock na Praça</title>
+  <!-- 1. Configurações básicas -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- 2. Título da página -->
+  <title id="page-title">Rock na Praça — 23 Anos de Rock em Esteio/RS</title>
+
+  <!-- 3. SEO Meta Tags -->
+  <meta id="meta-description" name="description" content="O Rock na Praça é um evento mensal que há 23 anos movimenta Esteio (RS) com bandas independentes, muito rock, cultura e atitude. Entrada gratuita e energia underground garantida!">
+  <meta name="keywords" content="rock na praça esteio, evento de rock gratuito, festival underground esteio, rock independente RS, bandas autorais, cultura alternativa, música ao vivo esteio, evento cultural gratuito,underground,música autoral,gratuito,rock,metal,praça coração de maria,esteio,economia solidária,inscrições para as bandas">
+  <meta name="author" content="Rock na Praça Esteio">
+
+  <!-- 4. Open Graph (redes sociais) -->
+  <meta id="og-title" property="og:title" content="Rock na Praça — 23 Anos de Rock em Esteio (RS)">
+  <meta id="og-description" property="og:description" content="Evento mensal e gratuito que há 23 anos celebra o rock independente em Esteio. Cultura, atitude e muito som no Rock na Praça!">
+  <meta id="og-image" property="og:image" content="https://www.jornalnopalco.com.br/wp-content/uploads/2017/02/rock-na-pr%C3%A7a.jpg">
+  <meta property="og:type" content="event">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- 5. Favicon -->
+  <link rel="icon" href="./assets/logoeicone.png" type="image/x-icon">
+
+  <!-- 6. CSS -->
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" href="./styles/style.css">
+
+  <!-- 7. JSON-LD (dados estruturados do evento) -->
+  <script type="application/ld+json" id="json-ld-event">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Rock na Praça",
+    "startDate": "2025-11-23T15:00-03:00",
+    "endDate": "2025-11-23T22:00-03:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Praça Coração de Maria",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Padre Felipe",
+        "addressLocality": "Esteio",
+        "postalCode": "93280-020",
+        "addressRegion": "RS",
+        "addressCountry": "BR"
+      }
+    },
+    "image": [
+      "https://www.jornalnopalco.com.br/wp-content/uploads/2017/02/rock-na-pr%C3%A7a.jpg"
+    ],
+    "description": "Viva a cena underground no Rock na Praça Esteio! Evento gratuito com bandas independentes, muito rock, cultura e atitude em um espaço aberto para todos os públicos.",
+    "offers": {
+      "@type": "Offer",
+      "url": "https://www.instagram.com/rocknapraca_/",
+      "price": 0,
+      "priceCurrency": "BRL",
+      "availability": "https://schema.org/InStock",
+      "validFrom": "2025-10-23T00:00-03:00"
+    },
+    "performer": {
+      "@type": "MusicGroup",
+      "name": "Vários artistas"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Balaiada Combo Cultural",
+      "url": "https://www.instagram.com/balaiada/"
+    }
+  }
+  </script>
 </head>
-<body>
 
- <header>
+<body>
+  <!--CABEÇALHO-->
+  <header>
     <div class="logo-icone">
       <img src="/assets/logoeicone.png" alt="Ícone rock na praça" height="70px">
     </div>
@@ -19,24 +86,41 @@
       <a href="index.html" >Página Inicial</a>
       <a href="sobre.html">Sobre</a>
       <a href="participe.html" class="active">Participe</a>
-      <a href="loja.html">Loja</a>
-      <a href="contato.html">Contato</a>
+      <a href="loja.html" >Loja</a>
     </nav>
   </header>
 
-</body>
-<h2>Participe</h2>
-  <h3>Cadastre sua banda</h3>
- <p>ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptas minus totam doloremque error rerum beatae, alias provident, similique soluta eius labore, dolor amet ab odit ad illo reiciendis sequi?</p> 
+<body>
+  <main>
+ 
+    <h2>PARTICIPE</h2>
+<section class="inscricoes-bandas">
 
-  <h3>Cadastre-se para a feira de economia criativa</h3>
-  <p>ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptas minus totam doloremque error rerum beatae, alias provident, similique soluta eius labore, dolor amet ab odit ad illo reiciendis sequi?</p> 
+<h3>Inscreva sua banda e toque no Rock na Praça!</h3>
 
+<p>O Rock na Praça acontece todo mês em Esteio (RS) e já está há 23 anos movimentando a cena do rock independente. É uma oportunidade única para bandas mostrarem seu trabalho, ganhar visibilidade e se conectar com o público em um evento gratuito, aberto e cheio de energia.</p>
+<p>As inscrições para bandas independentes estão abertas! Preencha o formulário abaixo e garanta sua participação no próximo evento. Mostre seu som, faça parte da história do Rock na Praça e venha tocar no nosso palco!</p>
+
+<a href="https://docs.google.com/forms/d/1NM1hGFCKbTqHCxCPmepf5YmKHqcSjfYpYwjlKUQ-pI8/viewform?pli=1&chromeless=1&fbclid=PAZXh0bgNhZW0CMTEAAac13yXdACyOZt_volRWpDK-MFZWZ0tFfU3fRfafxGdRTSXY1SKfMMK-j1lHWw_aem_F0SIA97PnLXL8D3AjW40Eg&pli=1&edit_requested=true"target="_blank">
+  <button class="btn">Inscreva-se aqui</button>
+</a>
+
+</section>
+
+  
+<section class="inscricoes-feira">
+<h3>Feira de Economia Solidária e Criativa</h3>
+<p>Na Praça Coração de Maria, além do Rock na Praça, acontece a nossa Feira de Economia Solidária e Criativa, com venda de roupas, artesanatos, CDs, livros, acessórios, antiguidades e muito mais.
+Quer participar como expositor? As inscrições estão abertas! Venha compor com a gente esse grande evento e mostrar seu trabalho para o público da feira e do festival.</p>
+<a href="https://docs.google.com/forms/d/1NM1hGFCKbTqHCxCPmepf5YmKHqcSjfYpYwjlKUQ-pI8/viewform?pli=1&chromeless=1&fbclid=PAZXh0bgNhZW0CMTEAAac13yXdACyOZt_volRWpDK-MFZWZ0tFfU3fRfafxGdRTSXY1SKfMMK-j1lHWw_aem_F0SIA97PnLXL8D3AjW40Eg&pli=1&edit_requested=true" target="_blank">
+  <button class="btn">Inscreva-se aqui</button>
+</a>
+</section>
+</main>
 <footer>
     <div class="rodape-conteudo">
         <div class="copyright">© Rock na praça. Todos os Direitos Reservados.</div>
         <div class="social-links">
-            <span>Siga-nos:</span>
             <a href="https://www.instagram.com/rocknapraca_/" target="_blank"><img src="https://img.icons8.com/?size=100&id=Xy10Jcu1L2Su&format=png&color=000000" alt="Instagram"></a>
             
             <a href="https://www.facebook.com/rocknapracaesteio" target="_blank"><img src="https://img.icons8.com/?size=100&id=uLWV5A9vXIPu&format=png&color=000000" alt="Facebook"></a>
