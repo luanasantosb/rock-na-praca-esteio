@@ -106,44 +106,26 @@ font-family: var(--fonte-principal);
 
 /*PROXIMA EDIÇÃO*/
 
-.proxima-edicao {
-  background-color: var(--preto);
-  color: var(--branco);
-  padding: 60px 20px;
-}
-
-.proxima-edicao .container {
+.container-proxima-edicao{
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;  
-  gap: 40px;       
-  max-width: 1200px;
-  margin: 0 auto;
+  justify-content: space-evenly;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
 }
 
 .proxima-edicao .imagem img {
-  width: 400px;
+  width: 30rem;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease;
 }
 
 .proxima-edicao .imagem img:hover {
   transform: scale(1.20); 
 }
 
-.proxima-edicao .conteudo {
-  max-width: 500px;
-}
-
 .proxima-edicao .conteudo h2 {
-  font-family: var(--fonte-principal);
   font-size: 3rem;
   font-weight: 700;
-  color: var(--amarelo);
-  margin-bottom: 25px;
+  margin-bottom:0.5rem;
 }
 
 .proxima-edicao .conteudo ul {
@@ -155,13 +137,13 @@ font-family: var(--fonte-principal);
 .proxima-edicao .conteudo li {
   display: flex;
   align-items: center;
-  gap: 15px;
-  margin-bottom: 18px;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .proxima-edicao .conteudo li img {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .proxima-edicao .conteudo span {
@@ -190,14 +172,15 @@ font-family: var(--fonte-principal);
 }
 
 /*REALIZAÇÃO E APOIO*/
-h2{
-  margin: 20px;
+.realizacao h2{
+  margin-left: 4.5rem;
 }
 .realizacao img{
-  margin:25px;
+  margin-top: 1rem;
+  margin-left: 6.5rem;
   height: 100px;
   width: 100px;
-  margin-bottom: 15px;
+  margin-bottom:4.5rem;
 }
 .realizacao img:hover{
   transform: scale(1.20); 
@@ -212,5 +195,5 @@ h2{
 .apoio img{
   height: 100px;
   width: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 4.5rem;
 }
